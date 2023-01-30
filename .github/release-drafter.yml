@@ -1,20 +1,22 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
-  - title: 'Features'
+  - title: 'Added'
+    labels:
+      - 'feature'
+  - title: 'Changed'
     labels:
       - 'enhancement'
-      - 'feature'
-  - title: 'Fixes'
+      - 'dependency-update'
+  - title: 'Fixed'
     labels:
       - 'fix'
       - 'bug'
-  - title: 'Maintenance'
-    label: 'chore'
-  - title: 'Etcetera'
-    label: 'documentation'
+exclude-labels:
+  - 'skip-changelog'
+  - 'docs'
+  - 'build'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
   major:
     labels:
