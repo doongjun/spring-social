@@ -1,4 +1,4 @@
 # spring-social
-implement social login example
+Implement social login example
 
 https://www.callicoder.com/categories/spring-boot/
